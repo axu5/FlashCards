@@ -1,0 +1,15 @@
+{
+  "name": "flashcards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node flashcards.js"
+  },
+  "keywords": [],
+  "author": "Aleksanteri Aho",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}

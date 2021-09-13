@@ -1,0 +1,117 @@
+[
+  {
+    "Q": "Which business function deals with making sure products are produced to meet the standards of quality expected by customers?",
+    "A": [
+      "operations",
+      "operation",
+      "production",
+      "Operations management",
+      "operations management",
+      "Operations Management"
+    ],
+    "EXP": "Operations is the business function that deals with the production of products."
+  },
+  {
+    "Q": "Name the business function that involves developing and selling products that meet customers’ needs.",
+    "A": [
+      "marketing"
+    ],
+    "EXP": "Marketing is the business function responsible for making sure the products match the customers' needs."
+  },
+  {
+    "Q": "______________  is involved in making sure the firm has the employees it needs to carry out its operations.",
+    "A": [
+      "HR",
+      "Human Resources",
+      "human resources",
+      "hr",
+      "human resource"
+    ],
+    "EXP": "HR is the business function responsible for making sure the company has the personnel it requires to meet its objectives.  "
+  },
+  {
+    "Q": "Which business function is responsible for making sure the firm has the funds the company needs to carry out its operations? (Two Words) ",
+    "A": [
+      "Finance",
+      "Finance department",
+      "Finance & accounts",
+      "Finance & Accounting",
+      "finance and accounting",
+      "Finance and Accounting",
+      "financial and accounts",
+      "Finance and account",
+      "financial resources",
+      "Financial resources",
+      "Finance and Accounts"
+    ],
+    "EXP": "One of the activities performed by Finance and accounts is to make sure the firm has the funds it needs."
+  },
+  {
+    "Q": "Name the economic sector where manufacturing occurs.",
+    "A": [
+      "Secondary",
+      "Secondary sector"
+    ],
+    "EXP": "The secondary sector includes activities such as manufacturing and construction that involve making and building things using inputs from the primary sector."
+  },
+  {
+    "Q": "Name the economic sector that includes activities like farming, fishing, and mining.",
+    "A": [
+      "Primary",
+      "Primary sector"
+    ],
+    "EXP": "The primary sector involves harvesting food or extracting raw materials from the earth."
+  },
+  {
+    "Q": "Name the economic sector that includes wholesale and retail stores.",
+    "A": [
+      "Tertiary",
+      "Tertiary sector",
+      "tertiary",
+      "tertiary sector",
+      "Tertiary sectors",
+      "tertiary sectors"
+    ],
+    "EXP": "The tertiary sector includes all distribution and service activities."
+  },
+  {
+    "Q": "Name the economic sector that includes website design and data mining.",
+    "A": [
+      "Quaternary",
+      "Quaternary sector",
+      "quaternary",
+      "quaternary sector"
+    ],
+    "EXP": "The quaternary sector is usually considered a subset of the tertiary sector and includes knowledge and data based activities."
+  },
+  {
+    "Q": "What term is used to describe an individual who starts a new business?",
+    "A": [
+      "Entrepreneur",
+      "Entrepreneurs",
+      "entrepreneur",
+      "entrepreneurs"
+    ],
+    "EXP": "Entrepreneurs are the people who take the risk to start a new business."
+  },
+  {
+    "Q": "What is the term for an individual who develops a new product or process largely for the benefit of their company while remaining an employee?",
+    "A": [
+      "Intrapreneur",
+      "Intrapreneurs",
+      "intrapreneur",
+      "intrapreneurs"
+    ],
+    "EXP": "Intrapreneurs are the individuals who develop new products and services within an existing organisation."
+  },
+  {
+    "Q": "Preparing which document can help prevent mistakes when setting up a business?",
+    "A": [
+      "Business plan",
+      "Business plans",
+      "A business plan",
+      "business plan"
+    ],
+    "EXP": "Preparing a business plan requires the entrepreneur to think through all the major obstacles they might face when setting up the business. It can help prevent potentially costly mistakes and improve the likelihood that the business will survive its early years."
+  }
+]
