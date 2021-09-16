@@ -66,7 +66,8 @@ async function main() {
     correct.toString().green,
     "questions correct out of",
     total.toString().green + " questions",
-    `(${(((correct / total) * 1000) | 0) / 10}%)`.bgWhite.black
+    `(${toSignificantFigure((correct / total) * 100, 3)}%)`.bgWhite
+      .black
   );
 
   if (incorrect.length > 0) {
@@ -83,6 +84,39 @@ async function main() {
   }
 
   console.log();
+}
+
+/**
+ * @name toSignificantFigure
+ * @description Return a number with a specific precision (of significant figure)
+ *
+ * @author axu5 (github.com/axu5)
+ * @version 16.09.2021
+ *
+ * @param {Number} number number to be made precise
+ * @param {Number} precision how many numbers there should be in the output
+ *
+ * @returns {Number} the number which has been floored
+ */
+function toSignificantFigure(number, precision) {
+  if (precision < 0) {
+    throw new Error("Precision has to be zero or more. (x>=0)");
+  }
+
+  /**
+   * Example:
+   * (inputs) -> (expected output)
+   * 3.1415, 2 -> 3.14
+   *
+   * 3.1415 * 10^2 = 3.1415 * 100 = 314.15
+   * 314.15 | 0 = 314.
+   * 314. / 100 = 3.14 ✅
+   */
+  const tenToThePrec = Math.pow(10, precision);
+  const choppedNumber = (number * tenToThePrec) | 0;
+  const finalResult = choppedNumber / tenToThePrec;
+
+  return finalResult;
 }
 
 /**
