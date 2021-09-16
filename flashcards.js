@@ -19,12 +19,12 @@ async function main() {
     .filter(x => x.endsWith(".json"));
 
   const topicChoice = await getValidOption(
-    questionTopics.map(x => x.replace(/\.[a-zA-Z0-9]*$/, "")),
+    questionTopics.map(x => x.replace(/\.[a-zA-Z0-9]*$/, ""))
   );
 
   const topicChoicePath = path.join(
     subjectChoicePath,
-    topicChoice + ".json",
+    topicChoice + ".json"
   );
   const topic = require(topicChoicePath);
 
@@ -38,12 +38,12 @@ async function main() {
   for (let i = 0; i < total; ++i) {
     const questionTopic = shuffledTopics[i];
     const answer = await prompt(
-      `[${i + 1}/${total}] `.gray + questionTopic.Q,
+      `[${i + 1}/${total}] `.gray + questionTopic.Q
     );
     console.clear();
     if (
       questionTopic.A.map(x => x.toLowerCase()).includes(
-        answer.toLowerCase(),
+        answer.toLowerCase()
       )
     ) {
       // correct
@@ -54,7 +54,7 @@ async function main() {
       incorrect.push({ questionTopic, answer });
       console.log("Incorrect D:".red);
       console.log(
-        questionTopic.A.reduce((a, c) => `${c}\n${a}`.yellow, ""),
+        questionTopic.A.reduce((a, c) => `${c}\n${a}`.yellow, "")
       );
       console.log("Explanation:".white, questionTopic.EXP.green);
     }
@@ -66,7 +66,7 @@ async function main() {
     correct.toString().green,
     "questions correct out of",
     total.toString().green + " questions",
-    `(${(((correct / total) * 1000) | 0) / 10}%)`.bgWhite.black,
+    `(${(((correct / total) * 1000) | 0) / 10}%)`.bgWhite.black
   );
 
   if (incorrect.length > 0) {
@@ -88,9 +88,11 @@ async function main() {
 /**
  * @description Creates a new array with the items from the array passed in the argument
  * Fisher-Yates Shuffle algorithm (https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle)
+ *
  * @author Axu5 (github.com/axu5)
  * @version 12.09.2021
- * @param {Array<any>} array array needed to shuffle
+ *
+ * x@param {Array<any>} array array needed to shuffle
  * @returns {Array<any>} returns a new array
  */
 function shuffleArray(array) {
@@ -119,8 +121,11 @@ function shuffleArray(array) {
 }
 
 /**
+ * @description Get user input from terminal
+ *
  * @author Axu5 (github.com/axu5)
  * @version 12.09.2021
+ *
  * @param {Array<string>} chooseArray
  * @returns {Promise<string>} option chosen by user
  */
