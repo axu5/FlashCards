@@ -126,7 +126,7 @@ function toSignificantFigure(number, precision) {
  * @author Axu5 (github.com/axu5)
  * @version 12.09.2021
  *
- * x@param {Array<any>} array array needed to shuffle
+ * @param {Array<any>} array array needed to shuffle
  * @returns {Array<any>} returns a new array
  */
 function shuffleArray(array) {
