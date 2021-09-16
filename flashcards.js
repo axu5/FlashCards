@@ -103,15 +103,6 @@ function toSignificantFigure(number, precision) {
     throw new Error("Precision has to be zero or more. (x>=0)");
   }
 
-  /**
-   * Example:
-   * (inputs) -> (expected output)
-   * 3.1415, 2 -> 3.14
-   *
-   * 3.1415 * 10^2 = 3.1415 * 100 = 314.15
-   * 314.15 | 0 = 314.
-   * 314. / 100 = 3.14 ✅
-   */
   const tenToThePrec = Math.pow(10, precision);
   const choppedNumber = (number * tenToThePrec) | 0;
   const finalResult = choppedNumber / tenToThePrec;
